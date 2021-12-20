@@ -81,8 +81,11 @@ class _AddGroupPageState extends State<AddGroupPage> {
                         form!.save();
                         if (form.validate()) {
                           // TODO
-                          logInfo(
-                              'Aquí llamar al método addGroup del firebaseController');
+                          //logInfo('Aquí llamar al método addGroup del firebaseController');//revisar si esta bien
+                          firebaseController.addGoup(
+                              _groupIdController.value,
+                              _student1Controller.value,
+                              _student2Controller.value);
                           Get.back();
                         }
                       },
