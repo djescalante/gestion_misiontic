@@ -14,23 +14,23 @@ class GroupWidget extends StatefulWidget {
 }
 
 class _GroupWidgetState extends State<GroupWidget> {
-  final FirestoreController firebaseController = Get.find();
+  FirestoreController firebaseController = Get.find();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         key: const ValueKey("groupsScaffold"),
-        body: const Center(
+        body: Center(
           // TODO
-          child: Text(
-              'Aquí colocar la lista de grupos, recordar que se se debe escuchar el controlador (groups) con obx'),
+          //child: Text('Aquí colocar la lista de grupos, recordar que se se debe escuchar el controlador (groups) con obx'),
+          child: Obx(() => Text('${FirestoreController().groups}')),
         ),
         floatingActionButton: FloatingActionButton(
           key: const ValueKey("addGroupAction"),
           child: const Icon(Icons.add),
           onPressed: () {
             // TODO
-            logInfo('Aqui navegar a AddGroupPage');
+            AddGroupPage;
           },
         ));
   }
