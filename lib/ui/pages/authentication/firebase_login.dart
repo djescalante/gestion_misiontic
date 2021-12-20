@@ -103,7 +103,7 @@ class _FirebaseLogInState extends State<FirebaseLogIn> {
               onPressed: () {
                 // TODO
                 //logInfo('Aquí navegar a  FirebaseSignUp');
-                FirebaseSignUp();
+                FirebaseSignUp(); //validar
               },
               child: const Text("Create account"))
         ],
