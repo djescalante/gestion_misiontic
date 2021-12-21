@@ -103,7 +103,9 @@ class _FirebaseLogInState extends State<FirebaseLogIn> {
               onPressed: () {
                 // TODO
                 //logInfo('Aquí navegar a  FirebaseSignUp');
-                FirebaseSignUp(); //validar
+                //FirebaseSignUp(); //validar
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => FirebaseSignUp()));
               },
               child: const Text("Create account"))
         ],
