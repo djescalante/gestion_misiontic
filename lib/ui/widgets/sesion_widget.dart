@@ -12,10 +12,11 @@ class SesionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
+        body: const Center(
           // TODO
-          //child: Text('Aquí colocar la lista de sesiones, recordar que se se debe escuchar el controlador (sesions) con obx'),
-          child: Obx(() => Text('${FirestoreController().sesions}')), //validar
+          child: Text(
+              'Aquí colocar la lista de sesiones, recordar que se se debe escuchar el controlador (sesions) con obx'),
+          //child: Obx(() => ListView.builder(FirestoreController().sesions}), //validar
         ),
         floatingActionButton: FloatingActionButton(
           key: const ValueKey("addSesionAction"),
