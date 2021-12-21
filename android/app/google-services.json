@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "845271931613",
+    "project_id": "gestionmisiontic",
+    "storage_bucket": "gestionmisiontic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845271931613:android:149102f43f5091522e5934",
+        "android_client_info": {
+          "package_name": "com.example.misiontic_team_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845271931613-hmvefkaor4lnvchg7qm7oao4vnutf942.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-9I_2MfHJT_D7_jk8eE8FPWH6UzSYdWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845271931613-hmvefkaor4lnvchg7qm7oao4vnutf942.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
