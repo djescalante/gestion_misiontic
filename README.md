@@ -22,8 +22,9 @@ https://drive.google.com/file/d/1eCGWT_RGyazoA8aDHSqewt4nXggiQ4iA/view?usp=shari
 https://github.com/djescalante/gestion_misiontic.git
 
 
-Integrantes 
+Integrantes :
 Jose David Escalante Barros  cc 72303605 NRC 1269
+y 
 Robert Araujo Gomez cc 72098686
 
 <img src="firebase.gif" width="300" />
