@@ -23,14 +23,19 @@ class _GroupWidgetState extends State<GroupWidget> {
         body: Center(
           // TODO
           //child: Text('Aquí colocar la lista de grupos, recordar que se se debe escuchar el controlador (groups) con obx'),
-          child: Obx(() => Text('${FirestoreController().groups}')),
+          child: Obx(() => Text('${FirestoreController().groups}')), //validar
         ),
         floatingActionButton: FloatingActionButton(
           key: const ValueKey("addGroupAction"),
           child: const Icon(Icons.add),
           onPressed: () {
             // TODO
-            const AddGroupPage();
+
+            //logInfo('Aquí navegar a  AddGroupPage'); //'/AddGroupPage
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => AddGroupPage())); //listo
           },
         ));
   }

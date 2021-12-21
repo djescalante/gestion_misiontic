@@ -15,7 +15,7 @@ class SesionWidget extends StatelessWidget {
         body: Center(
           // TODO
           //child: Text('Aquí colocar la lista de sesiones, recordar que se se debe escuchar el controlador (sesions) con obx'),
-          child: Obx(() => Text('${FirestoreController().sesions}')),
+          child: Obx(() => Text('${FirestoreController().sesions}')), //validar
         ),
         floatingActionButton: FloatingActionButton(
           key: const ValueKey("addSesionAction"),
@@ -24,7 +24,10 @@ class SesionWidget extends StatelessWidget {
             if (firebaseController.groupIds().isNotEmpty) {
               // TODO
               //logInfo('Aquí navegar a  AddSesionPage'); //'/addSesionPage'
-              const AddSesionPage();
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const AddSesionPage()));
             } else {
               Get.snackbar("Aun no has creado ningun grupo",
                   "Crea un grupo para continuar...");
