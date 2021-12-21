@@ -12,5 +12,20 @@ Este proyecto trabaja las funcionalidades de Firestore y autenticación de Fireb
 
 Pista: Revisar los comentarios TODO   
 
+Evidencias proyecto de nivelacion 
+- videos con pruebas  
+https://drive.google.com/file/d/16rWH5jYc5s4I-RsTYlLX_JArkz0358dh/view?usp=sharing
+- video con demo
+https://drive.google.com/file/d/1eCGWT_RGyazoA8aDHSqewt4nXggiQ4iA/view?usp=sharing
+- repositorio 
+
+https://github.com/djescalante/gestion_misiontic.git
+
+
+Integrantes 
+Jose David Escalante Barros  cc 72303605 NRC 1269
+Robert Araujo Gomez cc 72098686
 
 <img src="firebase.gif" width="300" />
+
+
