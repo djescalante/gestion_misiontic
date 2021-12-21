@@ -84,6 +84,7 @@ class _AddSesionPageState extends State<AddSesionPage> {
           ElevatedButton(
               key: const ValueKey("actionSesion"),
               onPressed: () {
+                // ignore: todo
                 // TODO
                 //logInfo('Aquí llamar al método addSesion del firebaseController');
                 firebaseController.addSesion(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:loggy/loggy.dart';
+//import 'package:loggy/loggy.dart';
 import 'package:misiontic_team_management/domain/controller/firestore_controller.dart';
 
 class AddGroupPage extends StatefulWidget {
@@ -81,13 +81,15 @@ class _AddGroupPageState extends State<AddGroupPage> {
                         form!.save();
                         if (form.validate()) {
                           // TODO
-                          //logInfo('Aquí llamar al método addGroup del firebaseController');//revisar si esta bien
+                          //logInfo('Aquí llamar al método addGroup del firebaseController'); //revisar si esta bien
                           firebaseController.addGoup(
-                            _groupIdController.value,
-                            _student1Controller.value,
-                            _student2Controller.value,
+                            _groupIdController.text,
+                            _student1Controller.text,
+                            _student2Controller.text,
                           );
                           Get.back();
+                          //print(_student1Controller.toString());
+                          //print(_student1Controller.text);
                         }
                       },
                       child: const Text("Submit")),

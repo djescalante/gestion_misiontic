@@ -20,11 +20,11 @@ class _GroupWidgetState extends State<GroupWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
         key: const ValueKey("groupsScaffold"),
-        body: Center(
-          // TODO
-          //child: Text('Aquí colocar la lista de grupos, recordar que se se debe escuchar el controlador (groups) con obx'),
-          child: Obx(() => Text('${FirestoreController().groups}')), //validar
-        ),
+        body: const Center(
+            // TODO
+            //child: Text('Aquí colocar la lista de grupos, recordar que se se debe escuchar el controlador (groups) con obx'),
+
+            ),
         floatingActionButton: FloatingActionButton(
           key: const ValueKey("addGroupAction"),
           child: const Icon(Icons.add),
